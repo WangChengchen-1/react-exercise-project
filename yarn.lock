@@ -9555,7 +9555,7 @@ react-refresh@^0.11.0:
   resolved "http://ccinpm.citycloud.com.cn/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha1-dxmLlEcz8PHxqQ55HeRUH58HQEY=
 
-react-router-dom@6:
+react-router-dom@^6.10.0:
   version "6.10.0"
   resolved "http://ccinpm.citycloud.com.cn/react-router-dom/-/react-router-dom-6.10.0.tgz#090ddc5c84dc41b583ce08468c4007c84245f61f"
   integrity sha512-E5dfxRPuXKJqzwSe/qGcqdwa18QiWC6f3H3cWXM24qj4N0/beCIf/CWTipop2xm7mR0RCS99NnaqPNjHtrAzCg==

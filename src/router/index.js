@@ -1,16 +1,31 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import {createHashRouter } from 'react-router-dom';
 
 import Home from '@/pages/Home';
-import Login from '@/pages/Login';
-function Router() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+import Login from '@/pages/login';
 
-export default Router;
+// function BaseRouter() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/login" element={<Login />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+//配置式写法
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path:'/login',
+    element:<Login/>
+  }
+]);
+
+
+export default router;

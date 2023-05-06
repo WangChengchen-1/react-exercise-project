@@ -9,6 +9,7 @@ function Login() {
     console.log('Success:', values);
     const { username, password } = values;
     if (username && password) {
+      localStorage.setItem('token','akfh322irh2ih9rr922fhihghg')
       navigate('/');
     }
   };

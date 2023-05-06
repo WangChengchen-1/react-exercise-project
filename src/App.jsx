@@ -1,6 +1,15 @@
-import Router from './router';
-import { RouterProvider } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
+import GetRoutes from "./router";
+import AuthRoute from "./router/AuthRoute";
 
 export default function App() {
-  return <RouterProvider router={Router} />;
+  return (
+    <div>
+      <HashRouter>
+        <AuthRoute>
+          <GetRoutes />
+        </AuthRoute>
+      </HashRouter>
+    </div>
+  );
 }
